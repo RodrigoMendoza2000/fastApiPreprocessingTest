@@ -17,4 +17,4 @@ async def say_hello(name: str):
 
 @app.get("/preprocess/{prompt}")
 async def preprocess(prompt: str):
-    return {"preprocessing: " f"{preprocess_class.transform_prompt_without_stem(prompt)}"}
+    return {"preprocessingsssss: " f"{preprocess_class.transform_prompt_without_stem(prompt)}"}
