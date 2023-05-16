@@ -34,14 +34,10 @@ with open('spanish_stopwords', 'r', encoding='utf-8') as file:
 STOPWORDS = SPANISH_STOPWORDS + ADDITIONAL_STOPWORDS
 TOOL = language_tool_python.LanguageTool('es-MX')
 
-# Load car makes and models
-with open('car_makes', 'r', encoding='utf-8') as file:
-    car_makes = file.read().splitlines()
-with open('car_models', 'r', encoding='utf-8') as file:
-    car_models = file.read().splitlines()
+
 with open('go_words', 'r', encoding='utf-8') as file:
     go_words = file.read().splitlines()
-GO_WORDS = car_makes + car_models + go_words
+GO_WORDS = go_words
 
 
 # Regex compilations for additional performance
